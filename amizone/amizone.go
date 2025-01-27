@@ -14,11 +14,11 @@ import (
 
 	"k8s.io/klog/v2"
 
-	"github.com/ditsuke/go-amizone/amizone/internal"
-	"github.com/ditsuke/go-amizone/amizone/internal/marshaller"
-	"github.com/ditsuke/go-amizone/amizone/internal/parse"
-	"github.com/ditsuke/go-amizone/amizone/internal/validator"
-	"github.com/ditsuke/go-amizone/amizone/models"
+	"github.com/random2907/go-amizone/amizone/internal"
+	"github.com/random2907/go-amizone/amizone/internal/marshaller"
+	"github.com/random2907/go-amizone/amizone/internal/parse"
+	"github.com/random2907/go-amizone/amizone/internal/validator"
+	"github.com/random2907/go-amizone/amizone/models"
 )
 
 // Endpoints

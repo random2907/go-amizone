@@ -8,8 +8,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ditsuke/go-amizone/amizone"
-	v1 "github.com/ditsuke/go-amizone/server/gen/go/v1"
+	"github.com/random2907/go-amizone/amizone"
+	v1 "github.com/random2907/go-amizone/server/gen/go/v1"
 	"github.com/go-logr/logr"
 	grpcAuth "github.com/grpc-ecosystem/go-grpc-middleware/auth"
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"

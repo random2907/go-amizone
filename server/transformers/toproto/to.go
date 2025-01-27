@@ -6,8 +6,8 @@ import (
 	"google.golang.org/genproto/googleapis/type/date"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	"github.com/ditsuke/go-amizone/amizone/models"
-	v1 "github.com/ditsuke/go-amizone/server/gen/go/v1"
+	"github.com/random2907/go-amizone/amizone/models"
+	v1 "github.com/random2907/go-amizone/server/gen/go/v1"
 )
 
 func TimeToProtoTS(t time.Time) *timestamppb.Timestamp {

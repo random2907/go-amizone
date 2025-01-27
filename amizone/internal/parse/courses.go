@@ -8,7 +8,7 @@ import (
 	"strconv"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/ditsuke/go-amizone/amizone/models"
+	"github.com/random2907/go-amizone/amizone/models"
 	"k8s.io/klog/v2"
 )
 

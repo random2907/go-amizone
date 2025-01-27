@@ -7,8 +7,8 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/ditsuke/go-amizone/amizone/internal"
-	"github.com/ditsuke/go-amizone/amizone/internal/parse"
+	"github.com/random2907/go-amizone/amizone/internal"
+	"github.com/random2907/go-amizone/amizone/internal/parse"
 	"k8s.io/klog/v2"
 )
 

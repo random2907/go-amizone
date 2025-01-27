@@ -5,10 +5,10 @@ import (
 	"errors"
 	"net"
 
-	"github.com/ditsuke/go-amizone/amizone"
-	v1 "github.com/ditsuke/go-amizone/server/gen/go/v1"
-	"github.com/ditsuke/go-amizone/server/transformers/fromproto"
-	"github.com/ditsuke/go-amizone/server/transformers/toproto"
+	"github.com/random2907/go-amizone/amizone"
+	v1 "github.com/random2907/go-amizone/server/gen/go/v1"
+	"github.com/random2907/go-amizone/server/transformers/fromproto"
+	"github.com/random2907/go-amizone/server/transformers/toproto"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

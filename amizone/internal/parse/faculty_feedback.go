@@ -7,7 +7,7 @@ import (
 	"net/url"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/ditsuke/go-amizone/amizone/models"
+	"github.com/random2907/go-amizone/amizone/models"
 )
 
 func isFacultyPage(dom *goquery.Document) bool {

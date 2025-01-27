@@ -5,7 +5,7 @@ import (
 	"io"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/ditsuke/go-amizone/amizone/models"
+	"github.com/random2907/go-amizone/amizone/models"
 )
 
 // Semesters returns the number of ongoing or passed semesters from the Amizone courses page.

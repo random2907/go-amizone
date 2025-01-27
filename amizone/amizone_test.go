@@ -14,10 +14,10 @@ import (
 	. "github.com/onsi/gomega"
 	"gopkg.in/h2non/gock.v1"
 
-	"github.com/ditsuke/go-amizone/amizone"
-	"github.com/ditsuke/go-amizone/amizone/internal/mock"
-	"github.com/ditsuke/go-amizone/amizone/internal/parse"
-	"github.com/ditsuke/go-amizone/amizone/models"
+	"github.com/random2907/go-amizone/amizone"
+	"github.com/random2907/go-amizone/amizone/internal/mock"
+	"github.com/random2907/go-amizone/amizone/internal/parse"
+	"github.com/random2907/go-amizone/amizone/models"
 )
 
 // === Test setup helpers ===

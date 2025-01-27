@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/ditsuke/go-amizone/amizone/models"
+	"github.com/random2907/go-amizone/amizone/models"
 )
 
 // ClientInterface is an exported interface for client to make mocking and testing more convenient.

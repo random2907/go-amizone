@@ -11,7 +11,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/ditsuke/go-amizone/server"
+	"github.com/random2907/go-amizone/server"
 	"github.com/joho/godotenv"
 	"k8s.io/klog/v2"
 )

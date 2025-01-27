@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ditsuke/go-amizone/amizone"
+	"github.com/random2907/go-amizone/amizone"
 	. "github.com/onsi/gomega"
 )
 
