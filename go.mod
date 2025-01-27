@@ -1,4 +1,4 @@
-module github.com/ditsuke/go-amizone
+module github.com/random2907/go-amizone
 
 go 1.18
 
