@@ -26,5 +26,6 @@ func IsLoggedIn(body io.Reader) bool {
 
 func IsLoggedInDOM(doc *goquery.Document) bool {
 	loginFormMatch := doc.Find(fmt.Sprintf("#%s", loginFormHtmlId)).First()
+	fmt.Print(loginFormMatch)
 	return loginFormMatch.Length() == 0
 }
