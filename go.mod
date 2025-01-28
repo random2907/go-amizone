@@ -6,15 +6,15 @@ require (
 	github.com/PuerkitoBio/goquery v1.5.1
 	github.com/go-logr/logr v1.2.0
 	github.com/grpc-ecosystem/go-grpc-middleware v1.3.0
-	github.com/grpc-ecosystem/grpc-gateway/v2 v2.10.3
+	github.com/grpc-ecosystem/grpc-gateway/v2 v2.6.0
 	github.com/joho/godotenv v1.4.0
 	github.com/microcosm-cc/bluemonday v1.0.23
 	github.com/onsi/gomega v1.19.0
 	github.com/samber/lo v1.38.1
 	golang.org/x/net v0.9.0
 	golang.org/x/text v0.9.0
-	google.golang.org/genproto v0.0.0-20230410155749-daa745c078e1
-	google.golang.org/grpc v1.56.3
+	google.golang.org/genproto v0.0.0-20210903162649-d08c68adba83
+	google.golang.org/grpc v1.40.0
 	google.golang.org/protobuf v1.30.0
 	gopkg.in/h2non/gock.v1 v1.1.2
 	k8s.io/klog/v2 v2.60.1

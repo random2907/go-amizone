@@ -107,7 +107,6 @@ func NewClient(cred Credentials, httpClient *http.Client) (*Client, error) {
 		}
 		httpClient = &http.Client{Jar: jar}
 	}
-
 	if jar := httpClient.Jar; jar == nil {
 		klog.Error("amizone.NewClient called with a jar-less http client. please pass a client with a non-nil cookie jar")
 		return nil, errors.New(ErrBadClient)
@@ -139,25 +138,30 @@ func (a *Client) login() error {
 	a.muLogin.lastAttempt = time.Now()
 
 	// Amizone uses a "verification" token for logins -- we try to retrieve this from the login form page
-	getVerificationTokenFromLoginPage := func() string {
+	getTokensFromLoginPage := func() (map[string]string) {
 		response, err := a.doRequest(false, http.MethodGet, "/", nil)
 		if err != nil {
 			klog.Errorf("login: %s", err.Error())
-			return ""
+			return nil
 		}
-		return parse.VerificationToken(response.Body)
+		return parse.LoginFormTokens(response.Body)
 	}()
 
-	if getVerificationTokenFromLoginPage == "" {
+	if getTokensFromLoginPage == nil {
 		klog.Error("login: failed to retrieve verification token from the login page")
 		return fmt.Errorf("%s: %s", ErrFailedLogin, ErrFailedToParsePage)
 	}
 
 	loginRequestData := func() (v url.Values) {
 		v = url.Values{}
-		v.Set(verificationTokenName, getVerificationTokenFromLoginPage)
+		v.Set(verificationTokenName, getTokensFromLoginPage["__RequestVerificationToken"])
+		v.Set("Salt", getTokensFromLoginPage["Salt"])
+		v.Set("SecretNumber", getTokensFromLoginPage["SecretNumber"])
+		v.Set("Signature", getTokensFromLoginPage["Signature"])
+		v.Set("Challenge", getTokensFromLoginPage["Challenge"])
 		v.Set("_UserName", a.credentials.Username)
 		v.Set("_Password", a.credentials.Password)
+		v.Set("recaptchaToken", "")
 		v.Set("_QString", "")
 		return
 	}()
